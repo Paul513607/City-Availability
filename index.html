@@ -1,274 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palas Mall Accessibility Improvements</title>
+    <style>
+      /* Basic reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Palas Mall Accessibility Improvements</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
+      body {
+        font-family: "Roboto", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f5f5f5;
+        font-size: 18px;
+      }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin-bottom: 16px;
+        font-weight: bold;
+      }
 
-    h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
-      margin-bottom: 10px;
-    }
+      h1 {
+        font-size: 36px;
+        color: #3d3d3d;
+      }
 
-    p {
-      margin-bottom: 10px;
-    }
+      h2 {
+        font-size: 30px;
+        color: #4a4a4a;
+      }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 20px;
-    }
+      h3 {
+        font-size: 24px;
+        color: #525252;
+      }
 
-    li {
-      margin-bottom: 5px;
-      padding-left: 10px;
-    }
+      h4 {
+        font-size: 20px;
+        color: #666;
+      }
 
-    li::before {
-      content: "• ";
-      color: #555;
-    }
+      p {
+        margin-bottom: 24px;
+      }
 
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 10px auto;
-    }
-  </style>
-</head>
+      ul {
+        margin-bottom: 24px;
+        list-style-type: disc;
+        padding-left: 40px;
+      }
 
-<body>
-  <h1>Palas Mall Accessibility Improvements</h1>
-  <h2>Context of use</h2>
-  <h3>Location</h3>
-  <p>
-    Palas Mall is located in Iasi city's center, making it easily accessible by car, public transportation or on foot.
-    It
-    is surrounded by parking lots and garages and has multiple entrances and exits.
-  </p>
-  <h3>Layout</h3>
-  <p>
-    The layout of the shopping mall consists of multiple floors connected by escalators, elevators, or stairs. Stores
-    are
-    typically arranged in clusters, with anchor stores located at opposite ends of the mall. There are also common areas
-    for dining, entertainment, and relaxation, such as food courts, cinema, and seating areas.
-  </p>
-  <h3>Environment</h3>
-  <p>
-    Palas Mall is usually a busy and vibrant environment, with a lot of visual and auditory stimuli. It can be noisy and
-    crowded, especially during peak hours or holidays. Lighting and temperature are carefully controlled to create a
-    comfortable and inviting atmosphere. There are also various amenities such as restrooms, ATMs, and information desks
-    to assist visitors.
-  </p>
-  <h3>Users</h3>
-  <p>
-    The users of the shopping mall are diverse and can include people of all ages, genders, and cultural backgrounds.
-    They
-    visit the mall for different reasons, such as shopping, dining, entertainment, or socializing. Some visitors are
-    frequent shoppers who know their way around, while others may be first-time visitors who are unfamiliar with the
-    layout and amenities.
-  </p>
-  <h3>Goals and Tasks</h3>
-  <p>
-    The goals and tasks of mall visitors can vary widely depending on their reasons for visiting. Shoppers may be
-    looking
-    for specific items or simply browsing for inspiration. Diners may be looking for a quick bite or a leisurely meal.
-    Entertainment seekers may be looking for a specific movie or game, or just something fun to do. Visitors may also
-    have
-    different needs and preferences, such as accessibility requirements, language barriers, or cultural sensitivities.
-  </p>
+      li {
+        margin-bottom: 8px;
+      }
 
-  <h2>Empirical laws</h2>
-  <h3>Fitts' law</h3>
-  <p>
-    Fitts' law states that the time it takes to move to a target area is a function of the distance to the target and
-    the
-    size of the target. In the context of Palas mall, this law can be applied to the design of physical and digital
-    objects such as escalators, elevators, information kiosks, and signage. For example, the size and placement of
-    buttons
-    on an elevator control panel should be optimized to reduce the time it takes for users to select their floor.
-    Similarly, the size and placement of directional signage should be optimized to facilitate wayfinding and reduce
-    confusion.
-  </p>
-  <h3>Hick's law</h3>
-  <p>
-    Hick's law states that the time it takes to make a decision is a function of the number of options available. In the
-    context of the shopping mall, this law can be applied to the design of digital interfaces such as the mall’s website
-    or interactive kiosks. For example, a restaurant menu in the food court that offers too many options or too much
-    information can overwhelm users and slow down their decision-making process. Therefore, designers should strive to
-    present information and options in a clear and organized way to help users make informed decisions quickly.
-  </p>
-  <h3>Steering Law</h3>
-  <p>
-    The steering law states that the time it takes to move a cursor to a target is a function of the angle between the
-    starting position and the target, as well as the distance to the target. In the context of the shopping mall, this
-    law
-    can be applied to the design of touch screens, interactive displays, and other digital interfaces. For example, the
-    placement and size of buttons and touch targets should be optimized to reduce the time it takes for users to make
-    selections. The design of the interface should also consider the natural hand movements and gestures of users to
-    create a more intuitive and effortless experience.
-  </p>
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 16px 0;
+      }
 
-  <h2>Metaphors/idioms, affordances and visual variables</h2>
-  <p>
-    Metaphors/idioms, affordances, and visual variables are all important design elements that can greatly enhance the
-    usability and user experience of a shopping mall. Here are some examples of how these design elements could be used:
-  </p>
-  <h3>Metaphors/Idioms</h3>
-  <ul>
-    <li>
-      A shopping cart metaphor could be used in the mall's website to make it easier for users to add items to their
-      cart and checkout.
-    </li>
-    <li>
-      The idiom "swipe left" could be used to communicate to users that they can swipe left to see more product details.
-    </li>
-    <li>
-      The idiom "tap to select" could be used to communicate to users that they can tap on a product to select it.
-    </li>
-  </ul>
-  <h3>Affordances</h3>
-  <ul>
-    <li>
-      The affordance of a push/pull handle could be used on doors to communicate how to open them.
-    </li>
-    <li>
-      The affordance of a tactile surface on a door handle could communicate to users that they should pull the door to
-      open it.
-    </li>
-    <li>
-      The affordance of a button on an elevator could be used to communicate how to call the elevator.
-    </li>
-  </ul>
-  <h3>Visual variables</h3>
-  <ul>
-    <li>
-      A specific color scheme or logo could be used to distinguish between different types of stores or departments in a
-      mall map. </li>
-    <li>
-      The size and placement of store signs could be used to communicate their relative importance and location within
-      the mall.
-    </li>
-    <li>
-      The use of icons and symbols could be used to create a visual association between a store and its products or
-      services. </li>
-  </ul>
+      /* Layout */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px 16px;
+      }
 
+      /* Typography */
+      a {
+        color: #1a73e8;
+        text-decoration: none;
+      }
 
-  <h2>Usability problems observed and potential improvements:</h2>
-  <ul>
-    <li>
-      <strong>Inadequate signage for restrooms, exits, and stores:</strong><br />Improvement:
-      Install larger signs with high-contrast colors, braille, and universally recognized symbols
-      to help all visitors navigate more easily.
-    </li>
-    <img src="https://example.com/signage.jpg" alt="Signage Example" />
-    <li>
-      <strong>Limited seating areas, especially near high-traffic locations:</strong><br />Improvement: Add comfortable
-      seating areas throughout the mall, with a focus on
-      high-traffic locations and rest areas. Ensure these seating spaces have wheelchair
-      accessible seating as well.
-    </li>
-    <li>
-      <strong>Touchscreen directory maps with small fonts and poor contrast:</strong><br />Improvement: Redesign the
-      touchscreen directories to include larger fonts,
-      high-contrast colors, and simplified graphics. Add auditory feedback to make the interface
-      more accessible for visually impaired users.
-    </li>
-    <img src="https://example.com/touchscreen.jpg" alt="Touchscreen Directory Example" />
-    <li>
-      <strong>Narrow aisles and inaccessible store entrances for wheelchair users:</strong><br />Improvement: Work with
-      store owners to widen aisles and modify store entrances to
-      accommodate wheelchair users. Implement accessible ramps and automatic doors where
-      necessary.
-    </li>
-    <li>
-      <strong>No audible guidance for visually impaired visitors:</strong><br />Improvement:
-      Introduce an audio-guidance system using strategically placed speakers, Bluetooth beacons,
-      or a dedicated mobile app to provide directions and information for visually impaired
-      visitors.
-    </li>
-  </ul>
+      a:hover {
+        text-decoration: underline;
+      }
 
-  <h2>Additional software improvements:</h2>
-  <ul>
-    <li>
-      <strong>Mobile app for personalized mall navigation:</strong><br />Develop a mobile app that
-      offers personalized navigation, including accessible routes and turn-by-turn directions for
-      all visitors, including those with special needs. The app can also provide real-time
-      information on store promotions and events.
-    </li>
-    <li>
-      <strong>Indoor positioning system (IPS):</strong><br />Implement an indoor positioning
-      system using Wi-Fi, Bluetooth, or other technologies to help users locate themselves within
-      the mall, enhancing their navigation experience.
-    </li>
-    <img src="https://example.com/indoor_positioning.jpg" alt="Indoor Positioning System Example" />
-    <li>
-      <strong>Augmented reality (AR) support:</strong><br />Integrate augmented reality features
-      into the mobile app to provide users with visual overlays that highlight important
-      information, such as store names, accessible entrances, and other points of interest.
-    </li>
-    <li>
-      <strong>Conversational UI agent:</strong><br />Incorporate a conversational UI agent, such
-      as a chatbot, into the mobile app to provide users with an alternative way to access
-      information and ask questions, enhancing the overall user experience.
-    </li>
-  </ul>
+      /* Custom styles */
+      header {
+        padding: 24px 0;
+        text-align: center;
+        background-color: #1a73e8;
+        color: #fff;
+      }
 
-  <h2>Empirical laws, affordances, and flow in the context of the improved solutions:</h2>
-  <ul>
-    <li>
-      <strong>Fitts' Law:</strong> By making interactive elements, such as touchscreen directories
-      and mobile app interfaces, more accessible and easier to use, visitors can interact with
-      them more efficiently.
-    </li>
-    <li>
-      <strong>Hick's Law:</strong> Simplified navigation and reduced choices on the touchscreen
-      directory and mobile app help users make decisions faster, resulting in a more streamlined
-      experience.
-    </li>
-    <li>
-      <strong>Steering Law:</strong> Wider aisles, accessible store entrances, and improved
-      navigation minimize the need for complex, precision-based movements, enabling users to move
-      more easily through the mall.
-    </li>
-    <li>
-      <strong>Affordances:</strong> Clear visual cues, such as high-contrast signage and
-      accessible route indicators, help users better understand the environment and navigate more
-      effectively.
-    </li>
-    <li>
-      <strong>Flow:</strong> The combination of improved navigation, better accessibility, and
-      enhanced usability create a more enjoyable and efficient experience for all users, including
-      those with special needs. As a result, visitors will be more likely to have a positive
-      experience and return to the shopping mall in the future.
-    </li>
-  </ul>
+      header h1 {
+        font-size: 48px;
+        margin-bottom: 8px;
+      }
 
-  <h2>Team</h2>
-  <ul>
-    <li><strong>Team Name:</strong> Team 1</li>
-    <li><strong>Team Members:</strong> Gavriliu Alin, Samson Paul, Leahu Vlad</li>
-    <h4>@Human Computer Interaction 2023</h4>
-  </ul>
-</body>
+      header h4 {
+        font-size: 24px;
+        font-weight: normal;
+        margin-top: 0;
+      }
 
+      section {
+        padding: 48px 0;
+      }
+
+      section:nth-child(even) {
+        background-color: #fff;
+      }
+
+      section h2 {
+        text-align: center;
+        margin-bottom: 32px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Palas Mall Accessibility Improvements</h1>
+      <h2>Context of use</h2>
+      <h3>Location</h3>
+      <p>
+        We chose Palas Mall for our project due to its central location in Iasi and its popularity
+        among diverse visitors. As the largest mall in the city, it offers us valuable insights into
+        real-world usability challenges. By addressing these issues, we can make a meaningful impact
+        on the local community, creating a more inclusive and enjoyable environment for all
+        visitors.
+      </p>
+      <h3>Layout</h3>
+      <p>
+        The layout of the shopping mall consists of multiple floors connected by escalators,
+        elevators, or stairs. Stores are typically arranged in clusters, with anchor stores located
+        at opposite ends of the mall. There are also common areas for dining, entertainment, and
+        relaxation, such as food courts, cinema, and seating areas.
+      </p>
+      <h3>Environment</h3>
+      <p>
+        Palas Mall is usually a busy and vibrant environment, with a lot of visual and auditory
+        stimuli. It can be noisy and crowded, especially during peak hours or holidays. Lighting and
+        temperature are carefully controlled to create a comfortable and inviting atmosphere. There
+        are also various amenities such as restrooms, ATMs, and information desks to assist
+        visitors.
+      </p>
+      <h3>Users</h3>
+      <p>
+        The users of the shopping mall are diverse and can include people of all ages, genders, and
+        cultural backgrounds. They visit the mall for different reasons, such as shopping, dining,
+        entertainment, or socializing. Some visitors are frequent shoppers who know their way
+        around, while others may be first-time visitors who are unfamiliar with the layout and
+        amenities.
+      </p>
+      <h3>Goals and Tasks</h3>
+      <p>
+        The goals and tasks of mall visitors can vary widely depending on their reasons for
+        visiting. Shoppers may be looking for specific items or simply browsing for inspiration.
+        Diners may be looking for a quick bite or a leisurely meal. Entertainment seekers may be
+        looking for a specific movie or game, or just something fun to do. Visitors may also have
+        different needs and preferences, such as accessibility requirements, language barriers, or
+        cultural sensitivities.
+      </p>
+
+      <h2>Empirical laws</h2>
+      <h3>Fitts' law</h3>
+      <p>
+        Fitts' law states that the time it takes to move to a target area is a function of the
+        distance to the target and the size of the target. In the context of Palas mall, this law
+        can be applied to the design of physical and digital objects such as escalators, elevators,
+        information kiosks, and signage. For example, the size and placement of buttons on an
+        elevator control panel should be optimized to reduce the time it takes for users to select
+        their floor. Similarly, the size and placement of directional signage should be optimized to
+        facilitate wayfinding and reduce confusion.
+      </p>
+      <h3>Hick's law</h3>
+      <p>
+        Hick's law states that the time it takes to make a decision is a function of the number of
+        options available. In the context of the shopping mall, this law can be applied to the
+        design of digital interfaces such as the mall’s website or interactive kiosks. For example,
+        a restaurant menu in the food court that offers too many options or too much information can
+        overwhelm users and slow down their decision-making process. Therefore, designers should
+        strive to present information and options in a clear and organized way to help users make
+        informed decisions quickly.
+      </p>
+      <h3>Steering Law</h3>
+      <p>
+        The steering law states that the time it takes to move a cursor to a target is a function of
+        the angle between the starting position and the target, as well as the distance to the
+        target. In the context of the shopping mall, this law can be applied to the design of touch
+        screens, interactive displays, and other digital interfaces. For example, the placement and
+        size of buttons and touch targets should be optimized to reduce the time it takes for users
+        to make selections. The design of the interface should also consider the natural hand
+        movements and gestures of users to create a more intuitive and effortless experience.
+      </p>
+
+      <h2>Metaphors/idioms, affordances and visual variables</h2>
+      <p>
+        Metaphors/idioms, affordances, and visual variables are all important design elements that
+        can greatly enhance the usability and user experience of a shopping mall. Here are some
+        examples of how these design elements could be used:
+      </p>
+      <h3>Metaphors/Idioms</h3>
+      <ul>
+        <li>
+          A shopping cart metaphor could be used in the mall's website to make it easier for users
+          to add items to their cart and checkout.
+        </li>
+        <li>
+          The idiom "swipe left" could be used to communicate to users that they can swipe left to
+          see more product details.
+        </li>
+        <li>
+          The idiom "tap to select" could be used to communicate to users that they can tap on a
+          product to select it.
+        </li>
+      </ul>
+      <h3>Affordances</h3>
+      <ul>
+        <li>
+          The affordance of a push/pull handle could be used on doors to communicate how to open
+          them.
+        </li>
+        <li>
+          The affordance of a tactile surface on a door handle could communicate to users that they
+          should pull the door to open it.
+        </li>
+        <li>
+          The affordance of a button on an elevator could be used to communicate how to call the
+          elevator.
+        </li>
+      </ul>
+      <h3>Visual variables</h3>
+      <ul>
+        <li>
+          A specific color scheme or logo could be used to distinguish between different types of
+          stores or departments in a mall map.
+        </li>
+        <li>
+          The size and placement of store signs could be used to communicate their relative
+          importance and location within the mall.
+        </li>
+        <li>
+          The use of icons and symbols could be used to create a visual association between a store
+          and its products or services.
+        </li>
+      </ul>
+
+      <h2>Usability problems observed and potential improvements:</h2>
+      <ul>
+        <li>
+          <strong>Inadequate signage for restrooms, exits, and stores:</strong><br />Improvement:
+          Install larger signs with high-contrast colors, braille, and universally recognized
+          symbols to help all visitors navigate more easily.
+        </li>
+        <img src="https://example.com/signage.jpg" alt="Signage Example" />
+        <li>
+          <strong>Limited seating areas, especially near high-traffic locations:</strong
+          ><br />Improvement: Add comfortable seating areas throughout the mall, with a focus on
+          high-traffic locations and rest areas. Ensure these seating spaces have wheelchair
+          accessible seating as well.
+        </li>
+        <li>
+          <strong>Touchscreen directory maps with small fonts and poor contrast:</strong
+          ><br />Improvement: Redesign the touchscreen directories to include larger fonts,
+          high-contrast colors, and simplified graphics. Add auditory feedback to make the interface
+          more accessible for visually impaired users.
+        </li>
+        <img src="https://example.com/touchscreen.jpg" alt="Touchscreen Directory Example" />
+        <li>
+          <strong>Narrow aisles and inaccessible store entrances for wheelchair users:</strong
+          ><br />Improvement: Work with store owners to widen aisles and modify store entrances to
+          accommodate wheelchair users. Implement accessible ramps and automatic doors where
+          necessary.
+        </li>
+        <li>
+          <strong>No audible guidance for visually impaired visitors:</strong><br />Improvement:
+          Introduce an audio-guidance system using strategically placed speakers, Bluetooth beacons,
+          or a dedicated mobile app to provide directions and information for visually impaired
+          visitors.
+        </li>
+      </ul>
+
+      <h2>Additional software improvements:</h2>
+      <ul>
+        <li>
+          <strong>Mobile app for personalized mall navigation:</strong><br />Develop a mobile app
+          that offers personalized navigation, including accessible routes and turn-by-turn
+          directions for all visitors, including those with special needs. The app can also provide
+          real-time information on store promotions and events.
+        </li>
+        <li>
+          <strong>Indoor positioning system (IPS):</strong><br />Implement an indoor positioning
+          system using Wi-Fi, Bluetooth, or other technologies to help users locate themselves
+          within the mall, enhancing their navigation experience.
+        </li>
+        <img
+          src="https://example.com/indoor_positioning.jpg"
+          alt="Indoor Positioning System Example"
+        />
+        <li>
+          <strong>Augmented reality (AR) support:</strong><br />Integrate augmented reality features
+          into the mobile app to provide users with visual overlays that highlight important
+          information, such as store names, accessible entrances, and other points of interest.
+        </li>
+        <li>
+          <strong>Conversational UI agent:</strong><br />Incorporate a conversational UI agent, such
+          as a chatbot, into the mobile app to provide users with an alternative way to access
+          information and ask questions, enhancing the overall user experience.
+        </li>
+      </ul>
+
+      <h2>Empirical laws, affordances, and flow in the context of the improved solutions:</h2>
+      <ul>
+        <li>
+          <strong>Fitts' Law:</strong> By making interactive elements, such as touchscreen
+          directories and mobile app interfaces, more accessible and easier to use, visitors can
+          interact with them more efficiently.
+        </li>
+        <li>
+          <strong>Hick's Law:</strong> Simplified navigation and reduced choices on the touchscreen
+          directory and mobile app help users make decisions faster, resulting in a more streamlined
+          experience.
+        </li>
+        <li>
+          <strong>Steering Law:</strong> Wider aisles, accessible store entrances, and improved
+          navigation minimize the need for complex, precision-based movements, enabling users to
+          move more easily through the mall.
+        </li>
+        <li>
+          <strong>Affordances:</strong> Clear visual cues, such as high-contrast signage and
+          accessible route indicators, help users better understand the environment and navigate
+          more effectively.
+        </li>
+        <li>
+          <strong>Flow:</strong> The combination of improved navigation, better accessibility, and
+          enhanced usability create a more enjoyable and efficient experience for all users,
+          including those with special needs. As a result, visitors will be more likely to have a
+          positive experience and return to the shopping mall in the future.
+        </li>
+      </ul>
+
+      <h2>Team</h2>
+      <ul>
+        <li><strong>Team Name:</strong> Team 1</li>
+        <li><strong>Team Members:</strong> Gavriliu Alin, Samson Paul, Leahu Vlad</li>
+        <h4>@Human Computer Interaction 2023</h4>
+      </ul>
+    </div>
+  </body>
 </html>
