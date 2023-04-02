@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8"/>
+<meta name="publisher" content="blankdots.com"/>
+<meta name="author" content="Stefan Negru"/>
+<meta name="keywords" content="personas, template" />
+<meta name="description" content="Personas Template with microdata" />
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Personas</title>
+</head>
+
+<body>
+<header>
+	<h1>Personas</h1>
+	<span id="logo"><a href="http://www.w3.org/html/logo/">
+<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="83" height="32" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+</a></span>
+
+</header>
+<section>
+	<h1 class="hidden">Personas Section</h1>
+	<article itemscope itemtype="http://schema.org/Person" class="persona">
+		<div class="personaInfo">
+			<h3>Type: Primary</h3>
+			<figure>
+				<img itemprop="image" src="./resources/photo1.png" alt="persona image" width="150" height="150" />
+			</figure>
+			<div class="personaBackground">				
+				<h4>Name: <span itemprop="givenName">Maria</span> <span itemprop="familyName">Popescu</span></h4>
+					<h5>Background</h5>
+					<ul>
+						<li><strong>Date of Birth:</strong> <time itemprop="birthDate" datetime="1975-03-03">03/03/1975</time></li>
+						<li><strong>Gender:</strong> <span itemprop="gender">Female</span></li>
+						<li itemprop="location" itemscope itemtype="http://schema.org/Place"><strong>Location:</strong> <span itemprop="name">Iasi, Romania</span></li>
+						<li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><strong>Work place:</strong> <span itemprop="name">High School</span>, <span itemprop="jobTitle">Professor</span></li>
+						<li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><strong>School:</strong>  <span itemprop="name">University "Alexandru Ioan-Cuza" Iasi</span></li>
+						<li><strong>Technology Level:</strong>Medium</li>
+					</ul>
+			</div>
+		</div>
+		<div class="personaDetails">
+			<div class="detailsLeft">
+				<div class="leftGroup">
+					<h5>Main Points</h5>
+					<ul>
+						<li>Experience with certain products: 
+                            <ul>
+                                <li>Uses screen reader software on her computer and smartphone to access digital content </li>
+                                <li>Prefers products with high contrast settings and large font sizes </li>
+                            </ul>
+                        </li>
+						<li>Dislikes about certain aspects: Dislikes products with poor accessibility features or low contrast settings</li>
+						<li>Disabilities relevant to our research: Maria has a visual impairment that requires her to use accessibility features, such as screen readers and high contrast settings, in order to access digital content.</li>
+						<li>Working environment: Maria works as a high school professor and uses technology moderately in her work.</li>
+						<li>Social connections: Maria is married with two children and enjoys spending time with her family.</li>
+						<li>The user's goals.</li>
+					</ul>
+				</div>
+				<div class="leftGroup">
+					<h5>Goals</h5>
+					<p>Goals are the reasons users perform tasks, not the tasks.</p>
+					<ul>
+						<li>Practical Goals:
+                            <ul>
+                                <li>To complete her shopping as quickly and easily as possible</li>
+                                <li>To find products that are compatible with her dietary restrictions</li>
+                            </ul>
+                        </li>
+						<li>Personal Goals:
+                            <ul>
+                                <li>To enjoy the shopping experience</li>
+                                <li>To feel confident in her ability to navigate the mall and find what she needs</li>
+                            </ul>
+                        </li>
+						<li>Business Goals: None applicable</li>
+					</ul>
+				</div>
+				<div class="leftGroup">
+					<h5>Frustrations and Pain Points</h5>
+					<ul>
+						<li>UI, Interaction, User Experience: Small font size, low contrast, poor readability on screens/panels</li>
+						<li>Dislikes relevant to the research: Uncomfortable shopping environment, lack of assistance or guidance for people with visual impairments</li>
+						<li>Disabilities: Visual impairment makes it difficult to read small text, distinguish colors or recognize faces</li>
+						<li>Unreliability of the product: Product information not provided in accessible formats, inconsistent stock availability or pricing, broken or outdated equipment</li>
+						<li>Difficulties in completing tasks: Difficulty in finding products, getting around the mall, and making purchases</li>
+						<li>Problems with the product: Long checkout lines, confusing navigation, no feedback provided on successful completion of tasks</li>
+					</ul>
+				</div>
+			</div>
+			<div itemprop="description" class="detailsRight">
+				<h5>Detailed Description</h5>
+				<p><strong>"A persona is a user archetype you can use to help guide decisions about product features, navigation, interactions, and even visual design." (Kim Goodwin, Cooper.com)</strong></p>
+				<p>
+                    Maria Popescu is a high school professor who enjoys shopping in her free time. She has been diagnosed with visual impairment that makes it difficult for her to navigate public spaces and read small print. Maria is an avid user of technology and relies heavily on her smartphone to stay organized and connected with her colleagues, friends, and family.
+                    In her work life, Maria is a dedicated professor who is passionate about helping her students learn and succeed. 
+                    In her social life, Maria values spending time with her family and friends. She enjoys trying out new restaurants and cafes and meeting with friends.
+                    When it comes to shopping, Maria is always on the lookout for good deals and high-quality products. However, her visual impairment can make it challenging for her to compare prices, read labels, and locate items in crowded stores. She also finds it frustrating when stores don't offer clear and concise product information on their websites or in their physical locations.
+                </p>
+				<h5>References</h5>
+				<ul>
+					<li>Fluid <a href="http://wiki.fluidproject.org/display/fluid/Personas">Personas</a>;</li>
+					<li>An introduction to personas and <a href="http://www.steptwo.com.au/papers/kmc_personas">how to create them</a>;</li>
+					<li itemscope itemtype="http://schema.org/Book"><span itemprop="name"><a href="http://www.amazon.com/Persona-Lifecycle-Throughout-Interactive-Technologies/dp/0125662513/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1240423894&amp;sr=8-1" class="external-link" rel="nofollow">The Persona Lifecycle, Keeping People in Mind Throughout Product Design</a></span>, <span itemprop="author">John Pruitt &amp; Tamara Adlin</span>;</li>
+					<li>This version of Personas Template includes microdata markup using <a href="schema.org/">schema.org Schemas</a>.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="personaScenarios">
+			<h5>Scenarios</h5>
+			<p>
+                Scenario 1:
+                Maria goes to the mall on a busy Saturday afternoon. She enters the mall, but soon realizes that navigating through the crowd and finding the stores she needs is challenging due to her visual impairment. She feels anxious and frustrated as she tries to follow the signs and find the stores she needs. <br>
+                End point: Maria feels discouraged and frustrated due to her inability to navigate the mall.          
+            </p>
+            <p>
+                Maria plans to meet her friend for lunch at a restaurant in the mall. She has trouble finding the restaurant due to her visual impairment and the lack of clear signage. She asks for help from a mall employee and finally locates the restaurant.  <br>
+                End point: Maria is relieved to find the restaurant, but the fact that she had to ask for help makes her feel embarrassed.
+            </p>
+		</div>
+	</article>
+	<article itemscope itemtype="http://schema.org/Person" class="persona">
+		<div class="personaInfo">
+			<h3>Type: Secondary</h3>
+			<figure>
+				<img  itemprop="image" src="./resources/photo2.png" alt="persona image" width="150" height="150" />
+			</figure>
+			<div class="personaBackground">				
+				<h4>Name: <span itemprop="givenName">Alexandru</span> <span itemprop="familyName">Antal</span></h4>
+					<h5>Background</h5>
+					<ul>
+						<li><strong>Date of Birth:</strong> <time itemprop="birthDate" datetime="1989-01-01">01/01/1989</time></li>
+						<li><strong>Gender:</strong> <span itemprop="gender">Male</span></li>
+						<li itemprop="location" itemscope itemtype="http://schema.org/Place"><strong>Location:</strong> <span itemprop="name">Iasi, Romania</span></li>
+						<li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><strong>Work place:</strong> <span itemprop="name">Clothes Store</span>, <span itemprop="jobTitle">Store Owner</span></li>
+						<li><strong>Technology Level:</strong> Medium</li>
+					</ul>
+			</div>
+		</div>
+		<div class="personaDetails">
+			<div class="detailsLeft">
+				<div class="leftGroup">
+					<h5>Main Points</h5>
+					<ul>
+						<li>Experience with certain products: Has experience in the fashion industry, specifically in the retail sector.</li>
+						<li>Dislikes about certain aspects:
+                            <ul>
+                                <li>Dislikes dealing with bureaucratic processes and paperwork.</li>
+                                <li>Dislikes unreliable suppliers.</li>
+                            </ul>
+                        </li>
+						<li>Disabilities relevant to our research: No disabilities relevant to our research.</li>
+						<li>Working environment:
+                            <ul>
+                                <li>Works in a clothes store as a manager.</li>
+                                <li>Spends most of his time in the store overseeing operations and interacting with customers.</li>
+                            </ul>
+                        </li>
+						<li>Social connections: Has a network of contacts in the fashion industry, including suppliers and other store owners.</li>
+						<li>The user's goals.</li>
+					</ul>
+				</div>
+				<div class="leftGroup">
+					<h5>Goals</h5>
+					<p>Goals are the reasons users perform tasks, not the tasks.</p>
+					<ul>
+						<li>Practical Goals: To successfully open and operate a new store at Palas Mall </li>
+						<li>Personal Goals: To increase profits and grow his business</li>
+						<li>Business Goals: To establish his brand at Palas Mall and expand his customer base</li>
+					</ul>
+				</div>
+				<div class="leftGroup">
+					<h5>Frustrations and Pain Points</h5>
+					<ul>
+						<li>UI, Interaction, User Experience:
+                            <ul>
+                                <li>Complicated process of store registration</li>
+                                <li>Unclear guidelines and requirements for opening a store in the mall</li>
+                                <li>Inefficient communication with mall administration</li>
+                            </ul>
+                        </li>
+						<li>Dislikes relevant to the research:
+                            <ul>
+                                <li>Inability to get useful data on mall visitors and their preferences</li>
+                                <li>Lack of tools for analyzing competition within the mall</li>
+                            </ul>
+                        </li>
+						<li>Unreliability of the product: The point-of-sale system often experiences technical issues, resulting in lost sales and dissatisfied customers</li>
+						<li>Difficulties in completing tasks: The process of generating and analyzing sales reports is confusing and requires too much manual work</li>
+						<li>Problems with the product: 
+                            <ul>
+                                <li>The store management system is slow and unresponsive, making it frustrating to use</li>
+                                <li>The lack of clear feedback from the system makes it difficult to identify and address issues efficiently</li>
+                            </ul>
+                        </li>
+					</ul>
+				</div>
+			</div>
+			<div itemprop="description" class="detailsRight">
+				<h5>Detailed Description</h5>
+				<p><strong>"A persona is a user archetype you can use to help guide decisions about product features, navigation, interactions, and even visual design." (Kim Goodwin, Cooper.com)</strong></p>
+				<p>
+                    Alexandru Antal owns a successful clothing store in Iasi. He has experience in managing a team and is very goal-oriented and ambitious. 
+                    Alexandru is interested in expanding his business by opening a new store at Palas Mall, which is a popular and busy shopping center in Iasi. His main business goal is to establish his brand at Palas Mall and expand his customer base, which will lead to increased profits and growth for his business.
+                    Alexandru's main frustration and pain point is finding a suitable location for the new store. 
+                    He is also concerned with managing finances and budgeting for the new store, as well as hiring and training new staff for the store. He wants to ensure that the new store is successful and operates smoothly.
+                </p>
+				<h5>References</h5>
+				<ul>
+					<li>Fluid <a href="http://wiki.fluidproject.org/display/fluid/Personas">Personas</a>;</li>
+					<li>An introduction to personas and <a href="http://www.steptwo.com.au/papers/kmc_personas">how to create them</a>;</li>
+					<li itemscope itemtype="http://schema.org/Book"><span itemprop="name"><a href="http://www.amazon.com/Persona-Lifecycle-Throughout-Interactive-Technologies/dp/0125662513/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1240423894&amp;sr=8-1" class="external-link" rel="nofollow">The Persona Lifecycle, Keeping People in Mind Throughout Product Design</a></span>, <span itemprop="author">John Pruitt &amp; Tamara Adlin</span>;</li>
+					<li>This version of Personas Template includes microdata markup using <a href="schema.org/">schema.org Schemas</a>.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="personaScenarios">
+			<h5>Scenarios</h5>
+            <p>
+                Scenario 1:
+                Alexandru is on the lookout for a suitable location to open his new store at Palas Mall. He has spent several weeks researching potential locations and meeting with real estate agents. <br>
+                End point: He is frustrated with the limited options available and is struggling to find a location that meets his requirements.
+            </p>
+            <p>
+                Scenario 2:
+                Alexandru is in the process of ordering inventory for his store at the Palas Mall. He navigates to the mall's website to check the upcoming events calendar to ensure he can plan his orders around peak shopping times. 
+                However, he finds the calendar section of the website to be difficult to navigate and outdated, with many events missing or listed on the wrong dates. <br>
+                End point: Alexandru eventually finds the information he needs, but he becomes frustrated with the mall's website and decides to rely on other sources for event information in the future.
+            </p>
+		</div>
+	</article>		
+</section>
+
+<footer id="footer">
+	<span id="license"><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a></span>
+</footer>
+</body>
+</html>
