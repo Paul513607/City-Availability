@@ -117,53 +117,90 @@
         text-align: center;
         margin-bottom: 32px;
       }
+
+      .delimiter {
+        width: 100%;
+        height: 2px;
+        /* dark grey */
+        background-color: #666;
+        margin: 32px 0;
+      }
+
+      .delimiter::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        /* light grey */
+        background-color: #ccc;
+        margin-bottom: 16px;
+      }
+
+      .inner-container {
+        margin: 0 20px;
+      }
     </style>
   </head>
 
   <body>
     <div class="container">
+      <h1>#HCI Challenge 1: City Access(ibility)</h1>
       <h1>Palas Mall Accessibility Improvements</h1>
+      <!-- write a div as a delimiting line -->
+      <div class="delimiter"></div>
       <h2>Context of use</h2>
-      <h3>Location</h3>
-      <p>
-        We chose Palas Mall for our project due to its central location in Iasi and its popularity
-        among diverse visitors. As the largest mall in the city, it offers us valuable insights into
-        real-world usability challenges. By addressing these issues, we can make a meaningful impact
-        on the local community, creating a more inclusive and enjoyable environment for all
-        visitors.
-      </p>
-      <h3>Layout</h3>
-      <p>
-        The layout of the shopping mall consists of multiple floors connected by escalators,
-        elevators, or stairs. Stores are typically arranged in clusters, with anchor stores located
-        at opposite ends of the mall. There are also common areas for dining, entertainment, and
-        relaxation, such as food courts, cinema, and seating areas.
-      </p>
-      <h3>Environment</h3>
-      <p>
-        Palas Mall is usually a busy and vibrant environment, with a lot of visual and auditory
-        stimuli. It can be noisy and crowded, especially during peak hours or holidays. Lighting and
-        temperature are carefully controlled to create a comfortable and inviting atmosphere. There
-        are also various amenities such as restrooms, ATMs, and information desks to assist
-        visitors.
-      </p>
-      <h3>Users</h3>
-      <p>
-        The users of the shopping mall are diverse and can include people of all ages, genders, and
-        cultural backgrounds. They visit the mall for different reasons, such as shopping, dining,
-        entertainment, or socializing. Some visitors are frequent shoppers who know their way
-        around, while others may be first-time visitors who are unfamiliar with the layout and
-        amenities.
-      </p>
-      <h3>Goals and Tasks</h3>
-      <p>
-        The goals and tasks of mall visitors can vary widely depending on their reasons for
-        visiting. Shoppers may be looking for specific items or simply browsing for inspiration.
-        Diners may be looking for a quick bite or a leisurely meal. Entertainment seekers may be
-        looking for a specific movie or game, or just something fun to do. Visitors may also have
-        different needs and preferences, such as accessibility requirements, language barriers, or
-        cultural sensitivities.
-      </p>
+      <div class="inner-container">
+        <h3>Location</h3>
+        <div class="inner-container">
+          <p>
+            We chose Palas Mall for our project due to its central location in Iasi and its
+            popularity among diverse visitors. As the largest mall in the city, it offers us
+            valuable insights into real-world usability challenges. By addressing these issues, we
+            can make a meaningful impact on the local community, creating a more inclusive and
+            enjoyable environment for all visitors.
+          </p>
+        </div>
+        <h3>Layout</h3>
+        <div class="inner-container">
+          <p>
+            The layout of the shopping mall consists of multiple floors connected by escalators,
+            elevators, or stairs. Stores are typically arranged in clusters, with anchor stores
+            located at opposite ends of the mall. There are also common areas for dining,
+            entertainment, and relaxation, such as food courts, cinema, and seating areas.
+          </p>
+        </div>
+        <h3>Environment</h3>
+        <div class="inner-container">
+          <p>
+            Palas Mall is usually a busy and vibrant environment, with a lot of visual and auditory
+            stimuli. It can be noisy and crowded, especially during peak hours or holidays. Lighting
+            and temperature are carefully controlled to create a comfortable and inviting
+            atmosphere. There are also various amenities such as restrooms, ATMs, and information
+            desks to assist visitors.
+          </p>
+        </div>
+        <h3>Users</h3>
+        <div class="inner-container">
+          <p>
+            The users of the shopping mall are diverse and can include people of all ages, genders,
+            and cultural backgrounds. They visit the mall for different reasons, such as shopping,
+            dining, entertainment, or socializing. Some visitors are frequent shoppers who know
+            their way around, while others may be first-time visitors who are unfamiliar with the
+            layout and amenities.
+          </p>
+        </div>
+        <h3>Goals and Tasks</h3>
+        <div class="inner-container">
+          <p>
+            The goals and tasks of mall visitors can vary widely depending on their reasons for
+            visiting. Shoppers may be looking for specific items or simply browsing for inspiration.
+            Diners may be looking for a quick bite or a leisurely meal. Entertainment seekers may be
+            looking for a specific movie or game, or just something fun to do. Visitors may also
+            have different needs and preferences, such as accessibility requirements, language
+            barriers, or cultural sensitivities.
+          </p>
+        </div>
+      </div>
 
       <h2>Empirical laws</h2>
       <h3>Fitts' law</h3>
@@ -196,6 +233,7 @@
         to make selections. The design of the interface should also consider the natural hand
         movements and gestures of users to create a more intuitive and effortless experience.
       </p>
+      <div class="delimiter"></div>
 
       <h2>Main Personnas</h2>
       <ul>
@@ -203,6 +241,7 @@
         <li>Alexandru Antal, store owner</li>
       </ul>
       <a href="personnas-page/index.html">Here is a more detailed overview of chosen personnas</a>
+      <div class="delimiter"></div>
 
       <h2>Metaphors/idioms, affordances and visual variables</h2>
       <p>
@@ -255,6 +294,7 @@
           and its products or services.
         </li>
       </ul>
+      <div class="delimiter"></div>
 
       <h2>Usability problems observed and potential improvements:</h2>
       <ul>
@@ -263,7 +303,7 @@
           Install larger signs with high-contrast colors, braille, and universally recognized
           symbols to help all visitors navigate more easily.
         </li>
-        <img src="./resources/signage.jpg" alt="Signage Example" width="500" height="500"/>
+        <img src="./resources/signage.jpg" alt="Signage Example" width="500" height="500" />
         <li>
           <strong>Limited seating areas, especially near high-traffic locations:</strong
           ><br />Improvement: Add comfortable seating areas throughout the mall, with a focus on
@@ -276,7 +316,12 @@
           high-contrast colors, and simplified graphics. Add auditory feedback to make the interface
           more accessible for visually impaired users.
         </li>
-        <img src="./resources/touch-screen-directory.jpg" alt="Touchscreen Directory Example" width="500" height="500"/>
+        <img
+          src="./resources/touch-screen-directory.jpg"
+          alt="Touchscreen Directory Example"
+          width="500"
+          height="500"
+        />
         <li>
           <strong>Narrow aisles and inaccessible store entrances for wheelchair users:</strong
           ><br />Improvement: Work with store owners to widen aisles and modify store entrances to
@@ -290,7 +335,7 @@
           visitors.
         </li>
       </ul>
-
+      <div class="delimiter"></div>
       <h2>Additional software improvements:</h2>
       <ul>
         <li>
@@ -321,36 +366,62 @@
           information and ask questions, enhancing the overall user experience.
         </li>
       </ul>
+      <div class="delimiter"></div>
 
       <h2>Empirical laws, affordances, and flow in the context of the improved solutions:</h2>
       <ul>
         <li>
-          <strong>Fitts' Law:</strong> By making interactive elements, such as touchscreen
-          directories and mobile app interfaces, more accessible and easier to use, visitors can
-          interact with them more efficiently.
+          <strong>Fitts' Law</strong>
+          <div class="inner-container">
+            <strong>Definition:</strong> States that the time it takes to move to a target area is a
+            function of the distance to the target and the size of the target.
+            <br />
+            <strong>Usage:</strong> By making interactive elements, such as touchscreen directories
+            and mobile app interfaces, more accessible and easier to use, visitors can interact with
+            them more efficiently.
+          </div>
         </li>
         <li>
-          <strong>Hick's Law:</strong> Simplified navigation and reduced choices on the touchscreen
-          directory and mobile app help users make decisions faster, resulting in a more streamlined
-          experience.
+          <strong>Hick' Law</strong>
+          <div class="inner-container">
+            <strong>Definition:</strong> States that the time it takes to make a decision is a
+            function of the number of options available.
+            <br />
+            <strong>Usage:</strong> Simplified navigation and reduced choices on the touchscreen
+            directory and mobile app help users make decisions faster, resulting in a more
+            streamlined experience.
+          </div>
         </li>
         <li>
-          <strong>Steering Law:</strong> Wider aisles, accessible store entrances, and improved
-          navigation minimize the need for complex, precision-based movements, enabling users to
-          move more easily through the mall.
+          <strong>Steering' Law</strong>
+          <div class="inner-container">
+            <strong>Definition:</strong> States that the time it takes to move a cursor to a target
+            is a function of the angle between the starting position and the target, as well as the
+            distance to the target.
+            <br />
+            <strong>Usage:</strong> Wider aisles, accessible store entrances, and improved
+            navigation minimize the need for complex, precision-based movements, enabling users to
+            move more easily through the mall.
+          </div>
         </li>
         <li>
-          <strong>Affordances:</strong> Clear visual cues, such as high-contrast signage and
-          accessible route indicators, help users better understand the environment and navigate
-          more effectively.
+          <strong>Affordances</strong>
+          <div class="inner-container">
+            Clear visual cues, such as high-contrast signage and accessible route indicators, help
+            users better understand the environment and navigate more effectively.
+          </div>
         </li>
         <li>
-          <strong>Flow:</strong> The combination of improved navigation, better accessibility, and
-          enhanced usability create a more enjoyable and efficient experience for all users,
-          including those with special needs. As a result, visitors will be more likely to have a
-          positive experience and return to the shopping mall in the future.
+          <strong>Flow</strong>
+          <div class="inner-container">
+            The combination of improved navigation, better accessibility, and enhanced usability
+            create a more enjoyable and efficient experience for all users, including those with
+            special needs. As a result, visitors will be more likely to have a positive experience
+            and return to the shopping mall in the future.
+          </div>
         </li>
       </ul>
+      <div class="delimiter"></div>
 
       <h2>Team</h2>
       <ul>
